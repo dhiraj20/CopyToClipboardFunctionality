@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>
+		Copy to clip board
+	</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="copyToClipboard.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+<body>
+	<div id="shareable-link-button">
+		Click to open copy to click dialog box
+	</div>
+	<div class="containter">
+		<div class="copy-to-clipboard-container">
+			<div class="copy-to-clipboard-title">
+				<h4>Copy to clipboard</h4>
+			</div>
+			<div>
+				<input type="text" id="shareable-link">
+				<div class="tooltip">
+					<button type="button" id="copy-to-clipboard-button" 
+					class="btn"
+					data-clipboard-target = "#shareable-link">
+					<i class="fa fa-clipboard font-awesome-icons" aria-hidden="true"></i>
+					<span class="tooltiptext">Copy to clipboard</span>
+				</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="copyToClipboard.js"></script>
+</body>
+</html>
